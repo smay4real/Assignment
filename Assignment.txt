@@ -3,11 +3,11 @@ using System.ComponentModel.Design;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace Giraffe
+namespace GuessCountGame
 {
    class Program
     {
-			// Assignment : conver this game from while loop to Do while loop
+			// Assignment : convert this game from while loop to Do while loop
         // Switch Statement
         static void Main(string[] args)
         {
