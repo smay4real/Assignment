@@ -1,0 +1,49 @@
+using System;
+using System.ComponentModel.Design;
+using System.Drawing;
+using System.Runtime.InteropServices;
+
+namespace Giraffe
+{
+   class Program
+    {
+			// Assignment : conver this game from while loop to Do while loop
+        // Switch Statement
+        static void Main(string[] args)
+        {
+            string secretWord = "giraffe";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
+
+            while (guess != secretWord && !outOfGuesses)
+            {
+                if (guessCount < guessLimit)
+                {
+                    Console.Write("Enter guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
+               
+
+            }
+            if (outOfGuesses)
+            {
+                Console.WriteLine("You Lose!");
+            }
+            else 
+            {
+                Console.WriteLine("You win");
+            }
+            
+                Console.ReadLine();
+            
+        }
+    }
+
+}
